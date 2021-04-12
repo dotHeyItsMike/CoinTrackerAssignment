@@ -34,7 +34,7 @@ interface CoinApiService {
         "Accept: application/json"
     )
     @GET("v1/cryptocurrency/listings/latest?start=1&limit=50&convert=USD")
-    suspend fun getCoins():  CoinApiResponse
+    suspend fun getCoins():  NetworkCoinContainer
 }
 
 object CoinApi {
